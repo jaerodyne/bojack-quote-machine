@@ -8,7 +8,10 @@ class Quote extends Component {
     let quotes = BojackQuotes.quotes.map((quote, index) => {
       return (
         <li key={index}>
-          {quote.quote} {quote.author}
+          {quote.quote}
+          <span id="author">
+            -- {quote.author}
+          </span>
         </li>
       )
     })
@@ -17,8 +20,12 @@ class Quote extends Component {
 
   render() {
     return(
-      <div>
-        {this.state.quotes}
+      <div id="quote-box">
+        <h1 id="text">
+          {this.state.quotes[Math.floor(Math.random() * this.state.quotes.length)]}
+        </h1>
+        <button id="new-quote">New Quote</button>
+        <a href="tweet-quote" id="tweet-quote">Tweeter</a>
       </div>
     )
   }
