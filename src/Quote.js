@@ -23,10 +23,11 @@ class Quote extends Component {
           >
             {quote.quote}
           </p>
-          <p 
+          <p
             id="author"
             style={{
-              fontSize: '24px'
+              fontSize: '24px',
+              textAlign: 'right'
             }}
           >
             -- {quote.author}
@@ -58,31 +59,36 @@ class Quote extends Component {
 
   render() {
     return(
-      <div className="container" id="quote-box">
+      <div className="row justify-content-center align-self-center">
         <Card
+          className="mx-auto d-block fade-in"
+          id="quote-box"
           style={{
             border: 'none',
             fontFamily: 'Lora, serif',
             margin: '15px',
             opacity: '0.8',
             padding: '15px',
-            width: '600px'
+            width: '800px'
           }}
         >
           <div id="text">
             {this.state.displayedQuote}
           </div>
+          <hr />
           <div
             style={{
               fontFamily: 'Poppins, sans-serif',
-              margin: '15px'
+              margin: '15px',
+              textAlign: 'center'
             }}
           >
             <Button onClick={() => this.getNewQuote()} id="new-quote">New Quote</Button>
             <a
               className="twitter-share-button"
               datasize="large"
-              href={"https://twitter.com/intent/tweet?text="}>
+              href={"https://twitter.com/intent/tweet?text="}
+            >
               Tweet
             </a>
           </div>
