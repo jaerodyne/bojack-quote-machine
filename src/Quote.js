@@ -19,19 +19,21 @@ class Quote extends Component {
         >
           <p 
             style={{
-              fontSize: '32px'
+              fontSize: '18px',
+              margin: '1em'
             }}
           >
-            {quote.quote}
+            {quote.text}
           </p>
           <p
             id="author"
             style={{
               fontSize: '24px',
+              marginBottom: '1em',
               textAlign: 'right'
             }}
           >
-            -- {quote.author}
+            —{quote.author}
           </p>
         </h1>
       )
@@ -67,12 +69,20 @@ class Quote extends Component {
           style={{
             border: 'none',
             fontFamily: 'Lora, serif',
-            margin: '15px',
+            margin: '2em',
             opacity: '0.8',
-            padding: '15px',
+            padding: '2em',
             width: '800px'
           }}
         >
+          <div
+            className="text-center"
+            style={{
+              marginTop: '1em'
+            }}
+          >
+            <img src={require('./bojack-horseman-logo.gif')} alt="Bojack Horseman"/>
+          </div>
           <div id="text">
             {this.state.displayedQuote}
           </div>
@@ -80,7 +90,7 @@ class Quote extends Component {
           <div
             style={{
               fontFamily: 'Poppins, sans-serif',
-              margin: '10px',
+              margin: '2em',
               textAlign: 'center'
             }}
           >

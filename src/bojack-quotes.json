@@ -2,23 +2,67 @@
   [
     {
       "author": "BoJack",
-      "quote": "He’s so stupid he doesn’t realize how miserable he should be."
+      "text": "He’s so stupid he doesn’t realize how miserable he should be."
     },
     {
       "author": "Sextina Aquafina ",
-      "quote": "I think about my child’s heartbeat and oh, it makes me weep. I hope and pray to God my little fetus has a soul. Because I want it to feel pain when I eject it from my hole."
+      "text": "I think about my child’s heartbeat and oh, it makes me weep. I hope and pray to God my little fetus has a soul. Because I want it to feel pain when I eject it from my hole."
     },
     {
       "author": "BoJack",
-      "quote": "Ow, crap. I hate this. Running is terrible. Everything is the worst."
+      "text": "Ow, crap. I hate this. Running is terrible. Everything is the worst."
     },
     {
       "author": "Mr. Peanutbutter",
-      "quote": "The universe is a cruel, uncaring void. The key to being happy isn’t the search for meaning; it’s just to keep yourself busy with unimportant nonsense, and eventually, you’ll be dead."
+      "text": "The universe is a cruel, uncaring void. The key to being happy isn’t the search for meaning; it’s just to keep yourself busy with unimportant nonsense, and eventually, you’ll be dead."
     },
     {
       "author": "Henry Winkler",
-      "quote": "There is no shame in dying for nothing. That’s why most people die."
+      "text": "There is no shame in dying for nothing. That’s why most people die."
+    },
+    {
+      "author": "BoJack", 
+      "text": "I’m responsible for my own happiness? I can’t even be responsible for my own breakfast!"
+    },
+    {
+      "author": "BoJack", 
+      "text": "You sleep on my couch and you don’t pay rent. I’ve had tapeworms that are less parasitic. I don’t even remember why I let you stay with me in the first place."
+    },
+    {
+      "author": "BoJack",
+      "text": "Man, I really regret buying those muffins and then eating them all on the drive home."
+    },
+    {
+      "author": "BoJack",
+      "text": "I feel like my life is just a series of unrelated wacky adventures."
+    },
+    {
+      "author": "BoJack",
+      "text": "I don’t understand how people… live. It’s amazing to me that people wake up every morning and say: ‘Yeah, another day, let’s do it.’ How do people do it? I don’t know how."
+    },
+    {
+      "author": "BoJack",
+      "text": "Look, for a lot of people, life is just one long hard kick in the urethra."
+    },
+    {
+      "author": "Princess Carolyn",
+      "text": "Laura! Clear our my schedule! I have to push a boulder up a hill and then have it roll over me time and time again with no regard for my well-being!"
+    },
+    {
+      "author": "Princess Carolyn",
+      "text": "That woman can knock a drink back like a Kennedy at a wake for another Kennedy, but I’ll be damned if she doesn’t get shit done!"
+    },
+    {
+      "author": "BoJack",
+      "text":  "Same thing that always happens. You didn’t know me and then you fell in love with me. And now you know me."
+    },
+    {
+      "author": "BoJack",
+      "text": "It gets easier. Every day it gets a little easier. But you gotta do it every day —that’s the hard part. But it does get easier."
+    },
+    {
+      "author": "Secretariat",
+      "text" : "When you get sad you run, straight ahead and you keep running forward no matter what there are people in your life that who are going to try to hold you back, slow you down, but you don’t let them. Don’t you ever stop running, don’t ever look behind you, there is nothing for you behind you. All that exists is what's ahead."
     }
   ]
 }
