@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BojackQuotes from './bojack-quotes.json';
 import { Button, Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Quote extends Component {
   state = { 
@@ -79,18 +80,22 @@ class Quote extends Component {
           <div
             style={{
               fontFamily: 'Poppins, sans-serif',
-              margin: '15px',
+              margin: '10px',
               textAlign: 'center'
             }}
           >
-            <Button onClick={() => this.getNewQuote()} id="new-quote">New Quote</Button>
-            <a
-              className="twitter-share-button"
-              datasize="large"
-              href={"https://twitter.com/intent/tweet?text="}
-            >
-              Tweet
-            </a>
+            <Button
+              className="mr-2"
+              onClick={() => this.getNewQuote()} id="new-quote">New Quote
+            </Button>
+            <Button>
+              <a
+                href={"https://twitter.com/intent/tweet?text="}
+                id="tweet-quote"
+                >
+                <FontAwesomeIcon icon={['fab', 'twitter']} />
+              </a>
+            </Button>
           </div>
         </Card>
       </div>

@@ -26,6 +26,10 @@ html, body {
 	animation-duration: 1.2s;
 }
 
+#tweet-quote {
+  color: white;
+}
+
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
