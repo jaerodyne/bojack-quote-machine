@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Quote extends Component {
   state = { 
+    displayedQuote: null,
     quotes: [],
-    displayedQuote: null
+    retweetAnchorTag: null
   }
 
   componentDidMount() {
@@ -20,8 +21,10 @@ class Quote extends Component {
   getNewQuote() {
     const randomQuote = this.state.quotes[this.randomIndex(this.state.quotes)]
     const quote = this.displayQuote(randomQuote)
+    const anchorTag = this.displayRetweet(randomQuote)
     this.setState({
-      displayedQuote: quote
+      displayedQuote: quote,
+      retweetAnchorTag: anchorTag
     })
   }
 
@@ -51,6 +54,17 @@ class Quote extends Component {
           —{quote.author}
         </p>
       </h1>
+    )
+  }
+
+  displayRetweet(quote){
+    return (
+      <a
+        href={"https://twitter.com/intent/tweet?text="+ encodeURIComponent(quote.text + " --" + quote.author)}
+        id="tweet-quote"
+        >
+        <FontAwesomeIcon icon={['fab', 'twitter']} />
+      </a>
     )
   }
 
@@ -101,12 +115,7 @@ class Quote extends Component {
               onClick={() => this.getNewQuote()} id="new-quote">New Quote
             </Button>
             <Button>
-              <a
-                href={"https://twitter.com/intent/tweet?text="}
-                id="tweet-quote"
-                >
-                <FontAwesomeIcon icon={['fab', 'twitter']} />
-              </a>
+              {this.state.retweetAnchorTag}
             </Button>
           </div>
         </Card>
