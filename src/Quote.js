@@ -10,46 +10,48 @@ class Quote extends Component {
   }
 
   componentDidMount() {
-    let quotes = BojackQuotes.quotes.map((quote) => {
-      return (
-        <h1
-          style={{
-            marginTop: '5px'
-          }}
-        >
-          <p 
-            style={{
-              fontSize: '18px',
-              margin: '1em'
-            }}
-          >
-            {quote.text}
-          </p>
-          <p
-            id="author"
-            style={{
-              fontSize: '24px',
-              marginBottom: '1em',
-              textAlign: 'right'
-            }}
-          >
-            —{quote.author}
-          </p>
-        </h1>
-      )
-    })
-    const quote = quotes[this.randomIndex(quotes)]
     this.setState({
-      quotes,
-      displayedQuote: quote
-    });
+      quotes: BojackQuotes.quotes
+    },
+    this.getNewQuote
+    );
   }
 
   getNewQuote() {
-    const quote = this.state.quotes[this.randomIndex(this.state.quotes)]
+    const randomQuote = this.state.quotes[this.randomIndex(this.state.quotes)]
+    const quote = this.displayQuote(randomQuote)
     this.setState({
       displayedQuote: quote
     })
+  }
+
+  displayQuote(quote) {
+    return (
+      <h1
+        style={{
+          marginTop: '5px'
+        }}
+      >
+        <blockquote
+          style={{
+            fontSize: '18px',
+            margin: '1em'
+          }}
+        >
+          {quote.text}
+        </blockquote>
+        <p
+          id="author"
+          style={{
+            fontSize: '24px',
+            marginBottom: '1em',
+            textAlign: 'right'
+          }}
+        >
+          —{quote.author}
+        </p>
+      </h1>
+    )
   }
 
   randomIndex(quotes) {
