@@ -1,4 +1,4 @@
-This is a Bojack Horseman quote randomizer that grew out of my fondness for the show and from the dark depths of my soul. It is based on a prompt from [https://www.freecodecamp.org/learn](Freecodecamp) for the Front End Libraries Certification.
+This is a Bojack Horseman quote randomizer that grew out of my fondness for the show and from the dark depths of my soul. It is based on a prompt from [Freecodecamp](https://www.freecodecamp.org/learn) for the Front End Libraries Certification.
 
 ## Available Scripts
 
